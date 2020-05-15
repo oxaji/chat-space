@@ -18,7 +18,6 @@
     &__name{
       width: 260px;
       height: 20px;
-      // display: flex;
       justify-content:space-between ;
       margin: 0px 20px;
       display: flex;
@@ -42,7 +41,6 @@
   }
   .side-bar__groups{
     background-color: #2f3e51;
-    // height: 100vh;
     height: calc(100vh - 100px);
     
     .group{
@@ -78,7 +76,6 @@
       &__group{
         font-size: 20px;
         padding: 35px 40px 0;
-        // display: flex;
       }
       &__member{
         text-decoration: none;
@@ -147,9 +144,6 @@
           margin-right: 10px;
           .hidden{
             display: none;
-          }
-          .icon{
-            
           }
         }
       }
