@@ -12,22 +12,7 @@
 
   .chat-main__messages
     = render @messages
-    -# .message
-    -#   .message__info
-    -#     .message__info__group
-    -#       group
-    -#     .message__info__time
-    -#       2020/05/14(Thr) 11:45:09
-    -#   .message__text
-    -#     hello
-    -# .message
-    -#   .message__info
-    -#     .message__info__group
-    -#       group
-    -#     .message__info__time
-    -#       2020/05/14(Thr) 11:45:09
-    -#   .message__text
-    -#     hello
+
   .chat-main__form
     = form_for [@group, @message] do |f|
       .form
