@@ -59,14 +59,15 @@ $(function(){
       $('.chat-main__messages').append(html);
       $('form')[0].reset();
       $('.chat-main__messages').animate({ scrollTop: $('.chat-main__messages')[0].scrollHeight});
+      $('.form__submit').prop('disabled', false);
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
       $('.form__submit').prop('disabled', false);
     });
     
-    .always(function({
-      $('.form__submit').prop('disabled', false);
-    }))
+    // .always(function({
+    //   $('.form__submit').prop('disabled', false);
+    // }));
   });
 });
