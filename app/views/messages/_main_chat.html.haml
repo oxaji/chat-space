@@ -1,15 +1,15 @@
 .chat-main
   .chat-main__main-header
     .chat-main__main-header__left
-      .chat-main__main-header__left__group
-        = @group.name
+      .chat-main__main-header__left__group  
+        =@group.name
       .chat-main__main-header__left__member
+        member :
         - @group.users.each do |user|
           =user.name
     .chat-main__main-header__right__edit
       = link_to edit_group_path(@group) do
         Edit
-
   .chat-main__messages
     = render @messages
 
