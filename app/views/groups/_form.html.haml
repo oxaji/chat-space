@@ -19,8 +19,6 @@
       #user-search-result
 
   .chat-group-form__field.clearfix
-    / この部分はインクリメンタルサーチ（ユーザー追加の非同期化のときに使用します]
-  -# .chat-group-form__field.clearfix
     .chat-group-form__field--left
       %label.chat-group-form__label{:for => "chat_group_チャットメンバー"} チャットメンバー
     .chat-group-form__field--right
@@ -29,8 +27,7 @@
         .chat-group-user.clearfix.js-chat-member#chat-group-user-8
           %input{name: "group[user_ids][]", type: "hidden", value: current_user.id}
           %p.chat-group-user__name= current_user.name
-      / グループ作成機能の追加時はここにcollection_check_boxesの記述を入れてください
-      / この部分はインクリメンタルサーチ（ユーザー追加の非同期化のときに使用します
+
   .chat-group-form__field.clearfix
     .chat-group-form__field--left
     .chat-group-form__field--right
